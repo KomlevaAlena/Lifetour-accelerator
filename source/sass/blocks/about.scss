@@ -1,0 +1,138 @@
+.about {
+  display: block;
+  width: 100%;
+
+  picture {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: auto;
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    padding: 46px 0 40px;
+    margin: 0 auto;
+
+    picture {
+      width: 450px;
+      padding-top: 131px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+    justify-content: start;
+    padding: 100px 0;
+    margin: 0 auto;
+
+    picture {
+      width: 660px;
+      padding-top: 0;
+      margin: 0;
+    }
+  }
+}
+
+.about__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $vp-768) {
+    width: 270px;
+    margin: 0 auto 0 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: max-content;
+    margin: 0;
+  }
+}
+
+.about__title-wrapper {
+  display: block;
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $vp-1440) {
+    width: max-content;
+    margin: 0 auto 0 0;
+  }
+}
+
+.about__title {
+  width: 290px;
+  margin: 0 auto;
+  padding: 17px 0 0;
+  font-size: 22px;
+  line-height: 22px;
+
+  @media (min-width: $vp-768) {
+    font-size: 25px;
+    line-height: 25px;
+    width: 270px;
+    margin: 0;
+    letter-spacing: 0.35px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 35px;
+    line-height: 35px;
+    width: max-content;
+    padding: 44px 0 58px;
+  }
+}
+
+.about__shadow {
+  display: block;
+  position: absolute;
+  content: "";
+  width: max-content;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  top: 3px;
+  left: 0;
+
+  @media (min-width: $vp-768) {
+    font-size: 40px;
+    line-height: 40px;
+    left: -1px;
+    top: 2px;
+    letter-spacing: 0.65px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 55px;
+    line-height: 55px;
+    width: max-content;
+    top: 5px;
+    left: 0;
+  }
+}
+
+.about__list {
+  width: 290px;
+  margin: 0 auto;
+  padding: 42px 0 22px;
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $vp-768) {
+    width: 270px;
+    padding: 47px 0 22px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: max-content;
+    padding: 0 0 57px;
+  }
+}

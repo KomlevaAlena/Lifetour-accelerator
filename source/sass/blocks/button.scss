@@ -1,0 +1,81 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-family: $font-montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  color: $color-default-white;
+  background-color: $color-blue;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    color: rgba(25, 51, 116, 100%);
+    background-color: $color-default-white;
+    outline: none;
+    border: 1px solid rgba(25, 51, 116, 100%);
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: rgba(25, 51, 116, 100%);
+    background-color: $color-default-white;
+    border: 1px solid transparent;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: rgba(25, 51, 116, 100%);
+    border: 1px solid transparent;
+    outline: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: rgba(153, 153, 153, 100%);
+    border: 1px solid transparent;
+    outline: none;
+    pointer-events: none;
+  }
+}
+
+.slider__button--prev {
+  width: 37px;
+  height: 35px;
+  padding: 17px;
+  position: relative;
+  outline: none;
+  border: 1px solid transparent;
+
+  svg {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 9px;
+    top: 13px;
+    left: 11px;
+    transform: rotate(180deg);
+  }
+}
+
+.slider__button--next {
+  width: 37px;
+  height: 35px;
+  padding: 17px;
+  position: relative;
+  outline: none;
+  border: 1px solid transparent;
+
+  svg {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 9px;
+    top: 13px;
+    left: 11px;
+  }
+}

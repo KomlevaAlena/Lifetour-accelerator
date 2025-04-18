@@ -1,0 +1,22 @@
+.gallery-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 157px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $vp-1440) {
+    width: 284px;
+  }
+}
+
+.gallery-card__image {
+  picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}

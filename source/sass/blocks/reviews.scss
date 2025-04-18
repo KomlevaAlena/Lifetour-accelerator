@@ -1,0 +1,158 @@
+.reviews {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 36px 0 20px;
+
+  @media (min-width: $vp-768) {
+    padding: 39px 0 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+    padding: 143px 0 20px;
+  }
+}
+
+.reviews__container {
+  padding: 0;
+}
+
+.reviews__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1320px;
+    margin: 0 0 0 auto;
+  }
+}
+
+.reviews__wrapper.swiper {
+  padding: 10px 0;
+
+  @media (min-width: $vp-1440) {
+    width: 1320px;
+    margin: 0 0 0 95px;
+  }
+}
+
+.reviews__list {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1320px;
+    margin: 0 0 0 35px;
+  }
+}
+
+.reviews__title {
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 0 32px;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+
+  @media (min-width: $vp-768) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0;
+    letter-spacing: 0.45px;
+    padding: 0 0 26px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 35px;
+    line-height: 35px;
+    width: 1200px;
+    padding: 0 0 29px;
+  }
+}
+
+.reviews__title-wrapper {
+  display: block;
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1200px;
+  }
+}
+
+.reviews__shadow {
+  display: block;
+  position: absolute;
+  content: "";
+  width: max-content;
+  font-size: 26px;
+  line-height: 26px;
+  top: -13px;
+  left: 0;
+  letter-spacing: 0.3px;
+
+  @media (min-width: $vp-768) {
+    font-size: 40px;
+    line-height: 40px;
+    left: 0;
+    top: -15px;
+    letter-spacing: 0.65px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 55px;
+    line-height: 55px;
+    width: 1200px;
+    top: -37px;
+    left: 0;
+    letter-spacing: 1.05px;
+  }
+}
+
+.reviews__wrapper--button {
+  position: absolute;
+  content: "";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 4px;
+  width: 88px;
+  margin-left: auto;
+
+  @media (min-width: $vp-768) {
+    width: 78px;
+    top: 0;
+    right: 0;
+  }
+}
+
+.reviews__button {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: block;
+    margin: 0;
+  }
+}

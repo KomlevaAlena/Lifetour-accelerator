@@ -1,0 +1,52 @@
+.link {
+  background-color: transparent;
+  color: $color-main;
+  border: 1px solid transparent;
+
+  svg {
+    color: currentColor;
+  }
+
+  &:hover {
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: none;
+    color: rgba(45, 56, 63, 0.2);
+
+    svg {
+      color: currentColor;
+    }
+  }
+
+  &:focus {
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: none;
+    color: $color-blue;
+
+    svg {
+      color: currentColor;
+    }
+  }
+
+  &:active {
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: none;
+    color: $color-active;
+
+    svg {
+      color: currentColor;
+    }
+  }
+
+  &:disabled {
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: none;
+
+    svg {
+      color: currentColor;
+    }
+  }
+}

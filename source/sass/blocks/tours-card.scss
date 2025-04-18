@@ -1,0 +1,262 @@
+.tours-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: bottom;
+  width: 290px;
+  margin: 0 auto;
+
+  picture {
+    display: block;
+    width: 290px;
+    height: auto;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 330px;
+
+    picture {
+      width: 330px;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    width: 380px;
+
+    picture {
+      width: 380px;
+    }
+  }
+}
+
+.tours-card__wrapper {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  top: 0;
+
+  @media (min-width: $vp-768) {
+    width: 100%;
+  }
+}
+
+.tours-card__title {
+  position: relative;
+  font-family: $font-montserrat-bold;
+  font-size: 24px;
+  line-height: 27px;
+  color: $color-default-white;
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+  padding: 0 0 31px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: $color-default-white;
+    opacity: 30%;
+    top: 69px;
+    left: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 32px;
+    width: 271px;
+    margin: 0 auto 0 21px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 271px;
+    padding: 0 0 30px;
+  }
+}
+
+.tours-card__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  list-style-type: none;
+  color: $color-default-white;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.tours-card__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    color: $color-default-white;
+    fill: currentColor;
+  }
+
+  span {
+    display: block;
+    width: max-content;
+    padding: 0 0 0 12px;
+  }
+}
+
+.tours-card__item--pin {
+  padding: 8px 16px 8px 12px;
+  background-color: $color-blue;
+  margin-right: 4px;
+
+  @media (min-width: $vp-768) {
+    margin-left: auto;
+    width: max-content;
+  }
+
+  svg {
+    width: 15px;
+    height: 26px;
+  }
+
+  span {
+    padding: 0 0 0 6px;
+  }
+}
+
+.tours-card__item--sun {
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.tours-card__item--moon {
+  margin-left: 7px;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.tours-card__list:first-of-type {
+  padding: 8px 5px 18px 21px;
+  justify-content: start;
+
+  .tours-card__item {
+    @media (min-width: $vp-768) {
+      margin-left: auto;
+      width: max-content;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 8px 0 18px;
+    justify-content: start;
+    width: 290px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: max-content;
+
+    .tours-card__item {
+      margin: 0;
+
+      &:first-of-type {
+        margin-right: 91px;
+      }
+
+      &:last-of-type {
+        margin-left: 18px;
+      }
+    }
+  }
+}
+
+.tours-card__item--stars {
+  margin-right: 8px;
+
+  .tours-card__category {
+    padding: 0;
+  }
+
+  svg {
+    display: block;
+    width: 84px;
+    height: 19px;
+    padding: 3px 0 0;
+  }
+}
+
+.tours-card__list:last-of-type {
+  padding: 0 5px 30px 10px;
+  width: max-content;
+  justify-content: start;
+
+  .tours-card__item {
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    align-items: start;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 30px;
+    width: max-content;
+
+    .tours-card__item {
+      &:first-of-type {
+        margin-right: 29px;
+      }
+
+      &:last-of-type {
+        margin-left: 27px;
+      }
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 340px;
+
+    .tours-card__item {
+      &:first-of-type {
+        margin-right: 54px;
+      }
+
+      &:last-of-type {
+        margin-left: 49px;
+      }
+    }
+  }
+}
+
+.tours-card__category {
+  display: block;
+  width: 100%;
+  font-family: $font-montserrat-light;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 300;
+  padding: 0;
+  letter-spacing: 1.25px;
+}
+
+.category-description {
+  display: block;
+  width: 100%;
+  font-family: $font-montserrat-bold;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  padding: 6px 0 0;
+}

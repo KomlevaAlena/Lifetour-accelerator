@@ -1,0 +1,109 @@
+.training-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 288px;
+  margin: 0 auto;
+  padding: 15px 15px 13px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+
+  picture {
+    display: block;
+    width: 260px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 213px;
+    align-self: stretch;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 285px;
+    min-height: 357px;
+
+    picture {
+      width: 255px;
+    }
+  }
+}
+
+.training-card.swiper-slide {
+  @media (min-width: $vp-768) {
+    width: 213px;
+    align-self: stretch;
+    flex-shrink: 0;
+  }
+}
+
+.training-card__name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    width: 183px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 255px;
+  }
+}
+
+.training-card__title {
+  width: min-content;
+  padding: 16px 0 15px;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $vp-768) {
+    width: 143px;
+  }
+}
+
+.training-card__link {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  color: $color-main;
+  top: -5px;
+  left: -1px;
+
+  svg {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 14px;
+    height: 8px;
+    fill: currentColor;
+    top: 30%;
+    left: 16%;
+  }
+}
+
+.training-card__description {
+  width: 260px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $vp-768) {
+    width: 183px;
+    min-height: 96px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 255px;
+    min-height: 64px;
+  }
+}

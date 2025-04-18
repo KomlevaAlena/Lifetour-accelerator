@@ -1,0 +1,244 @@
+.hero-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  margin: 0 auto;
+
+  picture {
+    display: block;
+    width: 320px;
+    height: auto;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+
+    picture {
+      width: 768px;
+    }
+
+    // &:nth-of-type(2n) {
+    //   .hero-card__wrapper {
+    //     top: 140px;
+    //   }
+    // }
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+
+    picture {
+      width: 1440px;
+    }
+  }
+}
+
+.hero-card__wrapper {
+  position: absolute;
+  content: "";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  top: 0;
+
+  picture {
+    display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+    top: 324px;
+
+    picture {
+      display: block;
+      content: "";
+      width: 442px;
+      height: 365px;
+      padding: 17px 0 0;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1000px;
+    align-items: start;
+    justify-content: left;
+    margin: 0 auto;
+    padding: 0 0 0 120px;
+    top: 0;
+    left: 0;
+
+    picture {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 410px;
+      height: 459px;
+      top: 188px;
+      left: 899px;
+    }
+  }
+}
+
+.hero-card__title {
+  font-family: $font-montserrat-bold;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: $color-default-white;
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+  padding: 146px 0 15px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 56px;
+    line-height: 56px;
+    width: 678px;
+    padding: 0 0 12px;
+    letter-spacing: 1.05px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 940px;
+    margin: 0;
+    padding: 200px 0 24px;
+    font-size: 77px;
+    line-height: 77px;
+    text-align: start;
+    letter-spacing: 1.05px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+.hero-card__description {
+  text-align: center;
+  color: $color-default-white;
+  font-size: 15px;
+  line-height: 20px;
+  display: block;
+  width: 276px;
+  margin: 0 auto;
+  padding: 0 0 38px;
+
+  @media (min-width: $vp-768) {
+    width: 473px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 420px;
+    margin: 0;
+    padding: 0 0 36px;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: start;
+  }
+}
+
+.hero-card__button {
+  width: 180px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 21px 20px 19px;
+
+  @media (min-width: $vp-1440) {
+    padding: 21px 20px 19px;
+  }
+}
+
+
+.hero-card__list {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    list-style-type: none;
+    color: $color-default-white;
+    padding: 133px 0 0;
+    border: 1px solid transparent;
+    width: 350px;
+  }
+}
+
+.hero-card__item {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  font-family: $font-montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  width: max-content;
+  min-width: 154px;
+  padding: 13px 15px 13px 32px;
+
+  &:last-of-type {
+    min-width: 183px;
+
+    svg {
+      right: 151px;
+    }
+  }
+
+  svg {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 122px;
+    width: 12px;
+    height: 12px;
+    fill: $color-default-white;
+  }
+
+  &:hover {
+    color: $color-default-white;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-default-white;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid $color-default-white;
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: $color-active;
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-disabled;
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    pointer-events: none;
+  }
+}

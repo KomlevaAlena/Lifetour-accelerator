@@ -1,0 +1,92 @@
+.hero {
+  display: block;
+  width: 100%;
+}
+
+.hero__container {
+  padding: 0;
+}
+
+.hero__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+  }
+}
+
+.hero-list {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+  }
+}
+
+.hero-list.swiper-wrapper {
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+  }
+}
+
+.hero-pagination {
+  width: 89px;
+  bottom: 39px;
+  left: 36%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+
+  .swiper-pagination-bullet {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid $color-default-white;
+
+    @media (min-width: $vp-768) {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: $color-default-white;
+    border: 1px solid $color-default-white;
+
+    @media (min-width: $vp-768) {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    width: 98px;
+    left: 43.5%;
+    bottom: 41px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 100px;
+    left: 1220px;
+    bottom: 93px;
+  }
+}

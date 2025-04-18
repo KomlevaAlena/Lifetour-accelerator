@@ -1,0 +1,92 @@
+.contacts__map {
+  position: relative;
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $vp-1440) {
+    display: block;
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+}
+
+.map {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  picture {
+    display: block;
+    width: 320px;
+    height: auto;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+
+    picture {
+      width: 768px;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 600px;
+    margin: 26px 78px 0 0;
+
+    picture {
+      width: 600px;
+    }
+  }
+}
+
+.contacts__map-icon {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  bottom: 145px;
+  right: 94px;
+  z-index: 1;
+  color: $color-blue;
+
+  svg {
+    width: 28px;
+    height: 30px;
+    fill: currentColor;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 42px;
+    height: 42px;
+    bottom: 119px;
+    right: 341px;
+
+    svg {
+      width: 42px;
+      height: 48px;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 50px;
+    height: 50px;
+    bottom: 222px;
+    right: 190px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

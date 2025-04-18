@@ -1,0 +1,16 @@
+.main-header {
+  width: 100%;
+  background-color: $color-blue;
+  margin: 0 auto;
+
+  .container {
+    width: 100%;
+
+    @media (min-width: $vp-1440) {
+      position: static;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}

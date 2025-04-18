@@ -1,0 +1,160 @@
+.reviews-card.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $vp-768) {
+    width: 565px;
+    min-height: 280px;
+    align-self: stretch;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+
+    &:first-of-type {
+      margin-left: -56px;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 700px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+.reviews-card {
+  width: 250px;
+  margin: 0 auto;
+  padding: 9px 20px 0;
+
+  picture {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 19px;
+  }
+
+  @media (min-width: $vp-768) {
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 37px 23px 20px;
+
+    picture {
+      width: 186px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 19px 37px 23px 20px;
+
+    picture {
+      width: 258px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.reviews-card__image {
+  @media (min-width: $vp-768) {
+    display: block;
+    width: 186px;
+    margin: 0;
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 258px;
+  }
+}
+
+.reviews-card__description {
+  display: block;
+  width: 250px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0 0 10px;
+
+  &:last-of-type {
+    padding: 0 0 16px;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 292px;
+    margin: 0;
+
+    &:first-of-type {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding: 4px 0;
+    }
+
+    &:last-of-type {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding: 0 0 22px;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 352px;
+    font-size: 14px;
+    line-height: 22px;
+
+    &:first-of-type {
+      padding: 0;
+      margin: 0 0 0 -2px;
+    }
+
+    &:last-of-type {
+      padding: 0;
+    }
+  }
+}
+
+.reviews-card__signature {
+  @media (min-width: $vp-768) {
+    padding: 0;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 352px;
+  }
+}
+
+.reviews-card__title {
+  width: 250px;
+  padding: 0 0 8px;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $vp-768) {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 0 0 6px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 13px;
+    line-height: 13px;
+    margin: -10px 0 0;
+  }
+}
+
+.reviews-card__age-location {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+}

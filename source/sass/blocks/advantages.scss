@@ -1,0 +1,143 @@
+.advantages {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 39px 0 20px;
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+    padding: 62px 0 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+    padding: 190px 0 20px;
+  }
+}
+
+
+.advantages__slider {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+  }
+}
+
+.advantages__list {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+.advantages__title-wrapper {
+  display: block;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $vp-1440) {
+    width: 1200px;
+  }
+}
+
+.advantages__title {
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 0 37px;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 0 60px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 35px;
+    line-height: 35px;
+    width: 1200px;
+    padding: 0 0 50px;
+  }
+}
+
+.advantages__shadow {
+  display: block;
+  position: absolute;
+  content: "";
+  width: max-content;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  top: -14px;
+  left: 51px;
+
+  @media (min-width: $vp-768) {
+    font-size: 40px;
+    line-height: 40px;
+    left: -8px;
+    top: -15px;
+    letter-spacing: 0.65px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 55px;
+    line-height: 55px;
+    width: max-content;
+    top: -28px;
+    left: 370px;
+  }
+}
+
+.advantages__wrapper--button {
+  position: absolute;
+  content: "";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 4px;
+  width: 88px;
+  margin-left: auto;
+
+  @media (min-width: $vp-1440) {
+    width: max-content;
+    top: 463px;
+    left: 561px;
+  }
+}
+
+.advantages__button {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    display: block;
+    margin: 0;
+  }
+}

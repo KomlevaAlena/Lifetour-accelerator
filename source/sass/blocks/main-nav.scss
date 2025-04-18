@@ -1,0 +1,146 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 320px;
+  padding: 13px 15px 12px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+    padding: 20px 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 41px 0 44px;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+  display: block;
+  mask: url("../img/menu.svg") no-repeat 100% 100%;
+  mask-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color-default-white;
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  color: $color-default-white;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid $color-default-white;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:focus {
+    border: 1px solid $color-default-white;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    border: 1px solid transparent;
+    background-color: $color-active;
+    outline: none;
+  }
+
+  &:disabled {
+    border: 1px solid transparent;
+    background-color: $color-disabled;
+    outline: none;
+  }
+
+  @media (min-width: $vp-768) {
+    margin: 8px 0 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--active {
+  position: relative;
+  display: block;
+  mask: url("../img/cross.svg") no-repeat 100% 100%;
+  mask-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color-default-white;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  color: $color-default-white;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid $color-default-white;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:focus {
+    border: 1px solid $color-default-white;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    border: 1px solid transparent;
+    background-color: $color-active;
+    outline: none;
+  }
+
+  &:disabled {
+    border: 1px solid transparent;
+    background-color: $color-disabled;
+    outline: none;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: none;
+  }
+}
+
+.main-menu {
+  display: none;
+  width: 100%;
+  background-color: $color-blue;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  top: 97px;
+  left: 0;
+  z-index: 2;
+
+  @media (min-width: $vp-768) {
+    top: 82px;
+  }
+
+  @media (min-width: $vp-1440) {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 52px;
+    left: 420px;
+    width: 663px;
+  }
+}
+
+.main-menu--open {
+  display: block;
+}
+

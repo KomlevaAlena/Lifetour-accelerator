@@ -1,0 +1,124 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 258px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 16px;
+    width: 360px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 960px;
+    flex-direction: row;
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+}
+
+input {
+  &::placeholder {
+    color: $color-input-text;
+    outline: none;
+  }
+}
+
+.form__group {
+  input {
+    width: 258px;
+    padding: 16px 14px 14px;
+    border: 1px solid rgba(45, 56, 63, 0.1);
+    border-radius: 3px;
+    margin: 0 0 8px;
+    outline: none;
+    color: $color-input-text;
+
+    &:hover {
+      border: 1px solid $color-blue;
+      outline: none;
+      color: $color-input-text;
+    }
+
+    &:focus {
+      border: 1px solid $color-main;
+      outline: none;
+      color: $color-input-text;
+    }
+
+    &:active {
+      border: 1px solid $color-main;
+      outline: none;
+      color: $color-active;
+    }
+
+    &:disabled {
+      border: 1px solid $color-disabled;
+      outline: none;
+    }
+
+    &:invalid {
+      border: 1px solid $color-error;
+      outline: none;
+    }
+
+    @media (min-width: $vp-768) {
+      width: 360px;
+      padding: 20px 29px 17px;
+      margin: 0 0 10px;
+    }
+
+    @media (min-width: $vp-1440) {
+      padding: 21px 21px 16px 28px;
+      margin: 0;
+    }
+  }
+
+  &:last-of-type {
+    input {
+      margin: 0 0 8px;
+      padding: 16px 14px 13px;
+
+      @media (min-width: $vp-768) {
+        padding: 20px 29px 17px;
+        margin: 0 0 10px;
+      }
+
+      @media (min-width: $vp-1440) {
+        padding: 21px 21px 16px 28px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.form__button {
+  font-family: $font-montserrat-light;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  border: 1px solid transparent;
+  padding: 22px 20px 20px;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 21px 20px 18px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 180px;
+    padding: 22px 34px 18px;
+    margin: 0;
+  }
+}
