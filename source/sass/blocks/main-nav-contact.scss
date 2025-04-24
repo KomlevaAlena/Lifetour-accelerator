@@ -14,9 +14,12 @@
   }
 
   @media (min-width: $vp-1440) {
-    justify-content: space-between;
+    justify-content: end;
     flex-wrap: wrap;
-    width: 1200px;
+    width: max-content;
+    max-width: 1200px;
+    gap: 133px;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -55,13 +58,21 @@
 
   @media (min-width: $vp-1440) {
     margin: 0;
-    padding: 0 0 0 32px;
+    padding: 0 0 0 0;
+    width: max-content;
 
-    picture {
+    svg {
       display: block;
-      width: 142px;
-      height: 40px;
+      width: 201px;
+      height: 42px;
+      margin: 0 0 0 0;
     }
+
+    // picture {
+    //   display: block;
+    //   width: 142px;
+    //   height: 40px;
+    // }
   }
 }
 
@@ -84,9 +95,11 @@
   }
 
   @media (min-width: $vp-1440) {
+    width: max-content;
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 0.15px;
-    padding: 5px 0 0;
+    padding: 0;
+    gap: 29px;
   }
 }
