@@ -19,12 +19,6 @@
     picture {
       width: 768px;
     }
-
-    // &:nth-of-type(2n) {
-    //   .hero-card__wrapper {
-    //     top: 140px;
-    //   }
-    // }
   }
 
   @media (min-width: $vp-1440) {
@@ -68,7 +62,7 @@
     align-items: start;
     justify-content: left;
     margin: 0 auto;
-    padding: 0 0 0 120px;
+    padding: 0 0 0 119px;
     top: 0;
     left: 0;
 
@@ -105,17 +99,17 @@
     line-height: 56px;
     width: 678px;
     padding: 0 0 12px;
-    letter-spacing: 1.05px;
+    letter-spacing: 1px;
   }
 
   @media (min-width: $vp-1440) {
     width: 940px;
     margin: 0;
-    padding: 200px 0 24px;
+    padding: 201px 0 24px 2px;
     font-size: 77px;
-    line-height: 77px;
+    line-height: 76px;
     text-align: start;
-    letter-spacing: 1.05px;
+    letter-spacing: 1px;
 
     br {
       display: block;
@@ -155,9 +149,11 @@
   line-height: 16px;
   font-weight: 400;
   padding: 21px 20px 19px;
+  margin: 0 0 0 0;
 
   @media (min-width: $vp-1440) {
     padding: 21px 20px 19px;
+    margin: 0 0 0 1px;
   }
 }
 
@@ -170,7 +166,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 11px;
     list-style-type: none;
     color: $color-default-white;
     padding: 133px 0 0;
@@ -188,7 +184,7 @@
   font-size: 12px;
   line-height: 16px;
   width: max-content;
-  min-width: 154px;
+  min-width: 155px;
   padding: 13px 15px 13px 32px;
 
   &:last-of-type {
