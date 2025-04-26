@@ -116,7 +116,8 @@
 
   @media (min-width: $vp-1440) {
     font-size: 35px;
-    line-height: 100px;
+    line-height: 102px;
+    letter-spacing: 0px;
     width: 1200px;
     padding: 0;
   }
@@ -147,6 +148,7 @@
     width: 1200px;
     top: 15px;
     left: 0;
+    letter-spacing: 0px;
   }
 }
 
