@@ -11,7 +11,7 @@
 
   @media (min-width: $vp-1440) {
     width: 1200px;
-    padding: 90px 0 75px;
+    padding: 91px 0 75px;
   }
 }
 
@@ -89,10 +89,10 @@
 
   @media (min-width: $vp-1440) {
     font-size: 35px;
-    line-height: 100px;
+    line-height: 103px;
     width: 1200px;
-    padding: 0 0 16px;
-    letter-spacing: 0.5px;
+    padding: 0 0 14px;
+    letter-spacing: 0px;
   }
 }
 
@@ -122,7 +122,7 @@
     width: 1200px;
     top: 14px;
     left: 0;
-    letter-spacing: 0.9px;
+    letter-spacing: 0px;
   }
 }
 
@@ -173,12 +173,14 @@
   justify-content: space-between;
   flex-direction: row;
   gap: 4px;
-  width: 78px;
+  // width: 78px;
+  width: max-content;
   top: -1px;
   right: 0;
 
   @media (min-width: $vp-1440) {
-    top: 28px;
+    top: 27px;
+    right: 0;
   }
 }
 

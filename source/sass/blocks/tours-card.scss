@@ -86,6 +86,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  max-width: 340px;
   margin: 0 auto;
   list-style-type: none;
   color: $color-default-white;
@@ -108,7 +109,7 @@
   span {
     display: block;
     width: max-content;
-    padding: 0 0 0 12px;
+    padding: 4px 0 0 12px;
   }
 }
 
@@ -183,7 +184,7 @@
 }
 
 .tours-card__item--stars {
-  margin-right: 8px;
+  // margin-right: 8px;
 
   .tours-card__category {
     padding: 0;
@@ -192,8 +193,9 @@
   svg {
     display: block;
     width: 84px;
-    height: 19px;
-    padding: 3px 0 0;
+    height: 24px;
+    padding: 4px 0 0 0;
+    margin: 0 0 0 0;
   }
 }
 
@@ -213,28 +215,30 @@
     padding: 0 0 30px;
     width: max-content;
 
-    .tours-card__item {
-      &:first-of-type {
-        margin-right: 29px;
-      }
+  //   .tours-card__item {
+  //     // &:first-of-type {
+  //     //   margin-right: 29px;
+  //     // }
 
-      &:last-of-type {
-        margin-left: 27px;
-      }
-    }
+  //     // &:last-of-type {
+  //     //   margin-left: 27px;
+  //     // }
+  //   }
   }
 
   @media (min-width: $vp-1440) {
     width: 340px;
+    justify-content: space-between;
 
     .tours-card__item {
-      &:first-of-type {
-        margin-right: 54px;
-      }
 
-      &:last-of-type {
-        margin-left: 49px;
-      }
+      // &:first-of-type {
+      //   margin-right: 54px;
+      // }
+
+      // &:last-of-type {
+      //   margin-left: 49px;
+      // }
     }
   }
 }
@@ -243,11 +247,11 @@
   display: block;
   width: 100%;
   font-family: $font-montserrat-light;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 12px;
   font-weight: 300;
   padding: 0;
-  letter-spacing: 1.25px;
+  // letter-spacing: 1.25px;
 }
 
 .category-description {
@@ -255,7 +259,7 @@
   width: 100%;
   font-family: $font-montserrat-bold;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 15px;
   font-weight: 600;
   letter-spacing: -0.5px;
   padding: 6px 0 0;
