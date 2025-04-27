@@ -40,6 +40,11 @@
 
   @media (min-width: $vp-1440) {
     width: 1200px;
+
+    .training__title {
+      letter-spacing: 0;
+      padding: 0 0 16px;
+    }
   }
 }
 
@@ -93,7 +98,7 @@
   }
 
   @media (min-width: $vp-1440) {
-    top: 206px;
+    top: 204px;
   }
 }
 
@@ -116,7 +121,7 @@
 
   @media (min-width: $vp-1440) {
     font-size: 35px;
-    line-height: 102px;
+    line-height: 100px;
     letter-spacing: 0px;
     width: 1200px;
     padding: 0;
@@ -180,7 +185,8 @@
 
   @media (min-width: $vp-1440) {
     width: 840px;
-    padding: 0 0 61px;
+    padding: 0 0 61px 0;
+    letter-spacing: 0;
 
     br {
       display: none;

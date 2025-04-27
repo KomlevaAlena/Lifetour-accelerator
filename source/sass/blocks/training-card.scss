@@ -67,6 +67,11 @@
   @media (min-width: $vp-768) {
     width: 143px;
   }
+
+  @media (min-width: $vp-1440) {
+    line-height: 15px;
+    letter-spacing: -0.2px;
+  }
 }
 
 .training-card__link {

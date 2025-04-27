@@ -24,6 +24,7 @@
   @media (min-width: $vp-1440) {
     font-size: 21px;
     line-height: 21px;
+    letter-spacing: -0.15px;
     width: 1200px;
     margin: 0 0 auto;
     padding: 0 0 27px;
@@ -79,7 +80,7 @@
     &::after {
       display: block;
       top: 80px;
-      left: 20px;
+      left: 19px;
       width: 1182px;
       height: 2px;
     }
@@ -206,33 +207,33 @@
 
     &:nth-of-type(2n) {
       &::before {
-        left: 14px;
+        left: 23px;
       }
 
       svg {
-        top: 2px;
-        left: 6px;
+        top: 3px;
+        left: 13px;
       }
 
       .process__description {
         width: 250px;
-        padding: 0 0 25px 39px;
+        padding: 0 0 25px 49px;
       }
     }
 
     &:nth-of-type(3n) {
       &::before {
-        left: -13px;
+        left: 7px;
       }
 
       svg {
         top: 3px;
-        left: -2px;
+        left: 17px;
       }
 
       .process__description {
         width: 250px;
-        padding: 0 0 25px 31px;
+        padding: 0 0 25px 52px;
 
         br {
           display: block;
@@ -242,17 +243,17 @@
 
     &:last-of-type {
       &::before {
-        left: -1px;
+        left: 30px;
       }
 
       svg {
         top: 3px;
-        left: -9px;
+        left: 19px;
       }
 
       .process__description {
         width: 250px;
-        padding: 0 0 25px 24px;
+        padding: 0 0 25px 56px;
 
         br {
           display: block;
