@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $vp-1440) {
-    padding: 0 0 29px;
+    padding: 0 0 27px;
     width: max-content;
 
     &:first-of-type {
@@ -44,9 +44,16 @@
   @media (min-width: $vp-1440) {
     width: max-content;
     margin: 0 auto 0 0;
-    padding: 0 0 17px;
+    padding: 1px 0 18px;
     font-size: 21px;
     line-height: 21px;
+    letter-spacing: -0.13px;
+  }
+}
+
+.about__list .about-card:last-of-type {
+  .about-card__title {
+    padding: 1px 0 17px;
   }
 }
 
