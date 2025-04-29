@@ -65,7 +65,7 @@
 .slider__button--next {
   width: 37px;
   height: 35px;
-  padding: 17px;
+  padding: 17px 17px 16px 17px;
   position: relative;
   outline: none;
   border: 1px solid transparent;
@@ -75,7 +75,7 @@
     content: "";
     width: 15px;
     height: 9px;
-    top: 13px;
+    top: 12px;
     left: 11px;
   }
 }
