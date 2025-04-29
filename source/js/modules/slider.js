@@ -117,6 +117,7 @@ export const sliderReviews = new Swiper('.reviews__wrapper', {
 export const sliderAdvantages = function sliderAdvantages() {
   const swiperDom = document.querySelector('.advantages__wrapper');
   const swiperStyle = document.querySelector('.page-body');
+  // const slidesCount = document.querySelectorAll('.advantages__list').length;
   if(document.body.clientWidth >= 1440) {
     swiperDom.classList.add('swiper');
     swiperDom.querySelector('.advantages__list').classList.add('swiper-wrapper');
@@ -125,7 +126,7 @@ export const sliderAdvantages = function sliderAdvantages() {
     });
     new Swiper('.advantages__wrapper', {
       direction: 'horizontal',
-      loop: false,
+      loop: true,
       navigation: {
         nextEl: '.advantages__button--prev',
         prevEl: '.advantages__button--next',
@@ -133,9 +134,12 @@ export const sliderAdvantages = function sliderAdvantages() {
       modules: [Navigation, Pagination],
       breakpoints: {
         1440: {
+          // slidesPerView: 3.58,
           slidesPerView: 3.58,
+          centeredSlides: true,
+          initialSlide: 2,
           spaceBetween: 30,
-          freeMode: true,
+          freeMode: false,
         },
       },
     });
