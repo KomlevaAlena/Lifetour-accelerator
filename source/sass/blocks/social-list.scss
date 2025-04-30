@@ -32,6 +32,11 @@
     top: 20%;
     left: 20%;
   }
+
+  @media (min-width: $vp-1440) {
+    width: 31px;
+    height: 31px;
+  }
 }
 
 .social-list__link-vk {

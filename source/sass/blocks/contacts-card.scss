@@ -72,7 +72,7 @@
 
   @media (min-width: $vp-1440) {
     left: 0;
-    top: 12%;
+    top: 15%;
 
     svg {
       width: 26px;
@@ -98,7 +98,8 @@
   @media (min-width: $vp-1440) {
     font-size: 18px;
     line-height: 18px;
-    padding: 0 0 9px;
+    letter-spacing: 0.35px;
+    padding: 0 0 8px;
   }
 }
 
