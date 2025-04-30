@@ -97,9 +97,11 @@
   }
 
   @media (min-width: $vp-1440) {
+    width: max-content;
     padding: 29px 0 16px;
     font-size: 18px;
     line-height: 18px;
+    letter-spacing: -0.35px;
   }
 }
 
