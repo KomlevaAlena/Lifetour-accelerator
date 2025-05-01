@@ -72,6 +72,11 @@
     padding: 0 0 32px;
     width: 271px;
     margin: 0 auto 0 21px;
+
+    &::after {
+      top: 70px;
+      left: -1px;
+    }
   }
 
   @media (min-width: $vp-1440) {
@@ -114,6 +119,12 @@
     display: block;
     width: max-content;
     padding: 4px 0 0 12px;
+  }
+
+  @media (min-width: $vp-768) {
+    span {
+      padding: 2px 0 0 0;
+    }
   }
 }
 
@@ -166,11 +177,6 @@
       margin-left: auto;
       width: max-content;
     }
-
-    // @media (min-width: $vp-1440) {
-    //   margin-left: auto;
-    //   width: 340px;
-    // }
   }
 
   @media (min-width: $vp-768) {
@@ -199,8 +205,6 @@
 }
 
 .tours-card__item--stars {
-  // margin-right: 8px;
-
   .tours-card__category {
     padding: 0;
   }
@@ -209,7 +213,7 @@
     display: block;
     width: 84px;
     height: 24px;
-    padding: 4px 0 0 0;
+    padding: 2px 0 0 0;
     margin: 0 0 0 0;
   }
 }
@@ -227,34 +231,16 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 0 0 30px;
+    padding: 0 0 27px;
     width: max-content;
-
-  //   .tours-card__item {
-  //     // &:first-of-type {
-  //     //   margin-right: 29px;
-  //     // }
-
-  //     // &:last-of-type {
-  //     //   margin-left: 27px;
-  //     // }
-  //   }
+    justify-content: space-between;
+    max-width: 292px;
+    gap: 28px;
   }
 
   @media (min-width: $vp-1440) {
     width: 340px;
     justify-content: space-between;
-
-    .tours-card__item {
-
-      // &:first-of-type {
-      //   margin-right: 54px;
-      // }
-
-      // &:last-of-type {
-      //   margin-left: 49px;
-      // }
-    }
   }
 }
 
@@ -266,10 +252,15 @@
   line-height: 12px;
   font-weight: 300;
   padding: 0;
-  // letter-spacing: 1.25px;
+
+  &:last-of-type {
+    @media (min-width: $vp-768) {
+      padding: 6px 0 0 0;
+    }
+  }
 }
 
-.category-description {
+.category-description{
   display: block;
   width: 100%;
   font-family: $font-montserrat-bold;
@@ -278,4 +269,19 @@
   font-weight: 600;
   letter-spacing: -0.5px;
   padding: 6px 0 0;
+
+  @media (min-width: $vp-768) {
+    letter-spacing: -0.5px;
+    padding: 4px 0 0 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    letter-spacing: -0.5px;
+  }
 }
+
+// .category-description + span {
+//   @media (min-width: $vp-768) {
+//     padding: 2px 0 0 0;
+//   }
+// }
