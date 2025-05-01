@@ -30,6 +30,8 @@
   }
 }
 
+
+
 .hero-card__wrapper {
   position: absolute;
   content: "";
@@ -46,14 +48,14 @@
 
   @media (min-width: $vp-768) {
     width: 768px;
-    top: 324px;
+    top: 343px;
 
     picture {
       display: block;
       content: "";
       width: 442px;
       height: 365px;
-      padding: 17px 0 0;
+      padding: 53px 0 0;
     }
   }
 
@@ -74,6 +76,26 @@
       height: 459px;
       top: 188px;
       left: 899px;
+    }
+  }
+}
+
+.kamchatka-card .hero-card__wrapper {
+  @media (min-width: $vp-768) {
+    top:138px;
+
+    .hero-card__description {
+      width: 462px;
+    }
+  }
+}
+
+.altai-card .hero-card__wrapper {
+  @media (min-width: $vp-768) {
+    top:342px;
+
+    .hero-card__description {
+      padding: 0 0 37px 0;
     }
   }
 }
@@ -99,7 +121,7 @@
     line-height: 56px;
     width: 678px;
     padding: 0 0 12px;
-    letter-spacing: 1px;
+    letter-spacing: 0.75px;
   }
 
   @media (min-width: $vp-1440) {
