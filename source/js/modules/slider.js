@@ -45,8 +45,8 @@ export const sliderTours = new Swiper('.tours__wrapper', {
   direction: 'horizontal',
   loop: false,
   navigation: {
-    nextEl: '.tours__button--prev',
-    prevEl: '.tours__button--next',
+    nextEl: '.tours__button-prev',
+    prevEl: '.tours__button-next',
   },
   modules: [Navigation, Pagination],
   breakpoints: {
@@ -65,7 +65,7 @@ export const sliderTours = new Swiper('.tours__wrapper', {
   },
 });
 
-export const sliderTraining = new Swiper('.training__slider--wrapper', {
+export const sliderTraining = new Swiper('.training__slider-wrapper', {
   direction: 'horizontal',
   loop: false,
   navigation: {
@@ -171,8 +171,8 @@ export const sliderGallery = function sliderGallery() {
       direction: 'horizontal',
       loop: true,
       navigation: {
-        nextEl: '.gallery__button--prev',
-        prevEl: '.gallery__button--next',
+        nextEl: '.gallery__button-prev',
+        prevEl: '.gallery__button-next',
       },
       modules: [Navigation, Pagination],
       breakpoints: {

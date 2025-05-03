@@ -1,10 +1,10 @@
 export const mobileMenu = function sliderGallery() {
   const menuButton = document.querySelector('.main-nav__toggle');
   const mobiMenu = document.querySelector('.main-menu');
-  // const noJs = Array.from(document.querySelectorAll('.main-list__nojs'));
+  // const noJs = Array.from(document.querySelectorAll('.main-list-nojs'));
 
   // for (let i = 0; i < 2; i++) {
-  //   noJs[i].classList.remove('main-list__nojs');
+  //   noJs[i].classList.remove('main-list-nojs');
   // }
 
   menuButton.addEventListener('click', () =>{
