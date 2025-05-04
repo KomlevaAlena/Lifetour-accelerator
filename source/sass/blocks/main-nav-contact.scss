@@ -27,7 +27,7 @@
   display: block;
   width: 142px;
   color: $color-default-white;
-  margin-left: auto;
+  margin:  -1px 0 0 auto;
 
   &:hover {
     border: 1px solid transparent;
@@ -56,6 +56,11 @@
     opacity: 0.2;
   }
 
+  @media (min-width: $vp-768) {
+    width: 143px;
+    margin:  -1px 0 0 auto;
+  }
+
   @media (min-width: $vp-1440) {
     margin: 0 0 0 1px;
     padding: 0;
@@ -78,14 +83,17 @@
   line-height: 14px;
   font-weight: 600;
   color: $color-default-white;
-  padding: 16px 0 0;
-  margin-left: auto;
+  padding: 8px 0 0 0;
+  margin: 0 -1px 0 auto;
+  // margin-left: auto;
 
   @media (min-width: $vp-768) {
     width: 268px;
     padding: 0;
     margin: -5px 0 0;
-    letter-spacing: 1.25px;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.15px;
   }
 
   @media (min-width: $vp-1440) {

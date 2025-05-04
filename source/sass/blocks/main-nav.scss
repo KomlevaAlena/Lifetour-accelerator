@@ -4,12 +4,12 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 320px;
-  padding: 13px 15px 12px;
+  padding: 15px 15px 13px;
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
     width: 678px;
-    padding: 20px 0 11px;
+    padding: 20px 0 12px;
   }
 
   @media (min-width: $vp-1440) {
@@ -31,6 +31,7 @@
   background-color: $color-default-white;
   width: 26px;
   height: 26px;
+  margin: 0 0 0 -2px;
   padding: 2px;
   color: $color-default-white;
   border: 1px solid transparent;
