@@ -136,7 +136,7 @@ export const sliderAdvantages = function sliderAdvantages() {
           // slidesPerView: 3.58,
           slidesPerView: 'auto',
           centeredSlides: true,
-          initialSlide: 3,
+          initialSlide: 4,
           spaceBetween: 30,
           freeMode: false,
           slideToClickedSlide: true,
