@@ -73,8 +73,8 @@
       content: "";
       width: 410px;
       height: 459px;
-      top: 188px;
-      left: 899px;
+      top: 133px;
+      left: 910px;
     }
   }
 }
@@ -87,6 +87,41 @@
       width: 462px;
     }
   }
+
+  @media (min-width: $vp-1440) {
+    top: 0;
+
+    .hero-card__title {
+      padding: 200px 0 24px 1px;
+    }
+
+    .hero-card__description {
+      width: 460px;
+      padding: 0 0 37px;
+    }
+
+    .hero-card__list {
+      width: 357px;
+      gap: 10px;
+    }
+
+    .hero-card__list .hero-card__item:first-of-type {
+      min-width: 161px;
+
+      svg {
+        right: 127px;
+      }
+    }
+
+    .hero-card__list .hero-card__item:last-of-type {
+      padding: 13px 15px 13px 32px;
+      min-width: 184px;
+
+      svg {
+        right: 151px;
+      }
+    }
+  }
 }
 
 .altai-card .hero-card__wrapper {
@@ -97,10 +132,36 @@
       padding: 0 0 37px;
     }
   }
+
+  @media (min-width: $vp-1440) {
+    top: 0;
+
+    .hero-card__title {
+      padding: 200px 0 24px 1px;
+    }
+
+    .hero-card__description {
+      width: 442px;
+      padding: 0 0 37px;
+    }
+
+    .hero-card__list {
+      width: 342px;
+    }
+
+    .hero-card__list .hero-card__item:last-of-type {
+      padding: 13px 15px 13px 32px;
+      min-width: 174px;
+
+      svg {
+        right: 141px;
+      }
+    }
+  }
 }
 
 .hero-card__title {
-  font-family: $font-montserrat-bold;
+  font-family: $font-montserrat-extrabold;
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.3px;
@@ -130,7 +191,7 @@
     font-size: 77px;
     line-height: 76px;
     text-align: start;
-    letter-spacing: 1px;
+    letter-spacing: 0;
 
     br {
       display: block;
@@ -157,7 +218,7 @@
   @media (min-width: $vp-1440) {
     width: 420px;
     margin: 0;
-    padding: 0 0 36px;
+    padding: 0 0 37px 1px;
     font-size: 17px;
     line-height: 24px;
     text-align: start;
