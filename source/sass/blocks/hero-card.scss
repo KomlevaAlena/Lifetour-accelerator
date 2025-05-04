@@ -80,11 +80,29 @@
 }
 
 .kamchatka-card .hero-card__wrapper {
+  .hero-card__title {
+    padding: 134px 0 15px 0;
+  }
+
+  .hero-card__description {
+    width: 284px;
+
+    br {
+      display: block;
+    }
+  }
+
+
+
   @media (min-width: $vp-768) {
     top: 138px;
 
     .hero-card__description {
       width: 462px;
+
+      br {
+        display: none;
+      }
     }
   }
 
@@ -98,6 +116,9 @@
     .hero-card__description {
       width: 460px;
       padding: 0 0 37px;
+      br {
+        display: none;
+      }
     }
 
     .hero-card__list {
@@ -125,6 +146,14 @@
 }
 
 .altai-card .hero-card__wrapper {
+  .hero-card__title {
+    padding: 121px 0 15px 0;
+  }
+
+  .hero-card__description {
+    padding: 0 0 61px;
+  }
+
   @media (min-width: $vp-768) {
     top: 342px;
 
@@ -164,13 +193,13 @@
   font-family: $font-montserrat-extrabold;
   font-size: 26px;
   line-height: 26px;
-  letter-spacing: 0.3px;
+  // letter-spacing: 0.3px;
   text-align: center;
   color: $color-default-white;
   display: block;
   width: 290px;
   margin: 0 auto;
-  padding: 146px 0 15px;
+  padding: 144px 0 16px;
 
   br {
     display: none;
@@ -181,7 +210,7 @@
     line-height: 56px;
     width: 678px;
     padding: 0 0 12px;
-    letter-spacing: 0.75px;
+    // letter-spacing: 0.75px;
   }
 
   @media (min-width: $vp-1440) {
@@ -207,7 +236,7 @@
   display: block;
   width: 276px;
   margin: 0 auto;
-  padding: 0 0 38px;
+  padding: 0 0 60px;
 
   @media (min-width: $vp-768) {
     width: 473px;
@@ -230,7 +259,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  padding: 21px 20px 19px;
+  padding: 22px 20px 18px;
   margin: 0;
 
   @media (min-width: $vp-1440) {
