@@ -54,7 +54,7 @@
       content: "";
       width: 442px;
       height: 365px;
-      padding: 53px 0 0;
+      padding: 45px 0 0;
     }
   }
 
@@ -92,13 +92,17 @@
     }
   }
 
-
-
   @media (min-width: $vp-768) {
-    top: 138px;
+    top: 3px;
+
+    .hero-card__title {
+      padding: 134px 0 13px 0;
+    }
 
     .hero-card__description {
       width: 462px;
+      padding: 0 0 37px 0;
+
 
       br {
         display: none;
@@ -155,7 +159,11 @@
   }
 
   @media (min-width: $vp-768) {
-    top: 342px;
+    top: 220px;
+
+    .hero-card__title {
+      padding: 121px 0 13px 0;
+    }
 
     .hero-card__description {
       padding: 0 0 37px;
@@ -193,7 +201,6 @@
   font-family: $font-montserrat-extrabold;
   font-size: 26px;
   line-height: 26px;
-  // letter-spacing: 0.3px;
   text-align: center;
   color: $color-default-white;
   display: block;
@@ -209,8 +216,7 @@
     font-size: 56px;
     line-height: 56px;
     width: 678px;
-    padding: 0 0 12px;
-    // letter-spacing: 0.75px;
+    padding: 0 0 13px;
   }
 
   @media (min-width: $vp-1440) {
@@ -242,6 +248,7 @@
     width: 473px;
     font-size: 17px;
     line-height: 24px;
+    padding: 0 0 37px 0;
   }
 
   @media (min-width: $vp-1440) {
