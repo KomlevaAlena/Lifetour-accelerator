@@ -303,3 +303,75 @@
     }
   }
 }
+
+.tours-kamchatka .tours-card__wrapper .tours-card__list {
+  @media (min-width: $vp-1440) {
+
+    .tours-card__item .tours-card__category {
+      padding: 7px 0 0 0;
+  }
+  .tours-card__item .category-description {
+      padding: 7px 0 0 0;
+  }
+
+    .tours-card__item--pin {
+      padding: 6px 14px 9px 14px;
+    }
+
+    .tours-card__item--moon {
+      span {
+        padding: 0 0 0 13px;
+      }
+    }
+
+    .tours-card__item--sun {
+      span {
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+.tours-kamchatka .tours-card__wrapper .tours-card__title {
+  @media (min-width: $vp-1440){
+    padding: 0 0 21px 0;
+  }
+}
+
+.tours-adygea .tours-card__wrapper .tours-card__list {
+  @media (min-width: $vp-1440) {
+
+    .tours-card__item .tours-card__category {
+      padding: 7px 0 0 0;
+  }
+  .tours-card__item .category-description {
+      padding: 7px 0 0 0;
+  }
+
+    .tours-card__item--pin {
+      padding: 6px 14px 9px 14px;
+    }
+
+    .tours-card__item--moon {
+      span {
+        padding: 0 0 0 13px;
+      }
+    }
+
+    .tours-card__item--sun {
+      span {
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+.tours-adygea .tours-card__wrapper .tours-card__title {
+  @media (min-width: $vp-1440){
+    padding: 0 0 21px 0;
+
+    &::after {
+      top: 96px;
+    }
+  }
+}
