@@ -11,7 +11,7 @@
 
   @media (min-width: $vp-1440) {
     width: 1440px;
-    padding: 123px 0 0;
+    padding: 123px 0 3px;
   }
 }
 
@@ -98,7 +98,7 @@
   @media (min-width: $vp-1440) {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 0 25px;
+    padding: 0 0 24px;
     font-size: 35px;
     line-height: 35px;
     letter-spacing: 0;
@@ -173,7 +173,7 @@
 
   @media (min-width: $vp-1440) {
     width: 712px;
-    padding: 0 0 44px 120px;
+    padding: 0 0 45px 120px;
     font-size: 16px;
     line-height: 24px;
 
