@@ -69,8 +69,9 @@
   }
 
   @media (min-width: $vp-1440) {
-    line-height: 15px;
-    letter-spacing: -0.2px;
+    padding: 16px 0 14px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
   }
 }
 
@@ -81,7 +82,7 @@
   height: 24px;
   border: 1px solid rgba(45, 56, 63, 0.3);
   color: $color-main;
-  top: -5px;
+  top: -4px;
   left: -1px;
 
   svg {
@@ -91,7 +92,7 @@
     width: 14px;
     height: 8px;
     fill: currentColor;
-    top: 30%;
+    top: 33%;
     left: 16%;
   }
 }
