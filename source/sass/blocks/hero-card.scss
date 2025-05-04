@@ -31,7 +31,6 @@
 }
 
 
-
 .hero-card__wrapper {
   position: absolute;
   content: "";
@@ -82,7 +81,7 @@
 
 .kamchatka-card .hero-card__wrapper {
   @media (min-width: $vp-768) {
-    top:138px;
+    top: 138px;
 
     .hero-card__description {
       width: 462px;
@@ -92,10 +91,10 @@
 
 .altai-card .hero-card__wrapper {
   @media (min-width: $vp-768) {
-    top:342px;
+    top: 342px;
 
     .hero-card__description {
-      padding: 0 0 37px 0;
+      padding: 0 0 37px;
     }
   }
 }
@@ -171,7 +170,7 @@
   line-height: 16px;
   font-weight: 400;
   padding: 21px 20px 19px;
-  margin: 0 0 0 0;
+  margin: 0;
 
   @media (min-width: $vp-1440) {
     padding: 21px 20px 19px;

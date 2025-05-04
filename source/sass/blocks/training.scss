@@ -122,7 +122,7 @@
   @media (min-width: $vp-1440) {
     font-size: 35px;
     line-height: 100px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     width: 1200px;
     padding: 0;
   }
@@ -153,7 +153,7 @@
     width: 1200px;
     top: 15px;
     left: 0;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 }
 
@@ -185,7 +185,7 @@
 
   @media (min-width: $vp-1440) {
     width: 840px;
-    padding: 0 0 61px 0;
+    padding: 0 0 61px;
     letter-spacing: 0;
 
     br {
