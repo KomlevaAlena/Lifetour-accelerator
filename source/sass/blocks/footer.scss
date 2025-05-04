@@ -3,12 +3,13 @@
   background-color: $color-default-white;
   color: $color-main;
   margin: 0 auto;
-  border-top: 1px solid rgba(45, 56, 63, 0.3);
+  // border-top: 1px solid rgba(45, 56, 63, 0.3);
 }
 
 .footer__container {
   width: 320px;
   padding: 0;
+  border-top: 1px solid rgba(45, 56, 63, 0.3);
 
   @media (min-width: $vp-768) {
     width: 768px;
