@@ -11,7 +11,7 @@
 
   @media (min-width: $vp-1440) {
     width: 1440px;
-    padding: 137px 0 103px;
+    padding: 135px 0 103px;
   }
 }
 
@@ -47,6 +47,12 @@
     display: flex;
     flex-direction: row;
     gap: 0;
+    overflow: visible;
+
+    .swiper-slide {
+      max-width: 380px;
+      min-height: 329px;
+    }
   }
 }
 
@@ -111,8 +117,9 @@
     font-size: 55px;
     line-height: 55px;
     width: max-content;
-    top: -31px;
+    top: -29px;
     left: 370px;
+    letter-spacing: 0;
   }
 }
 
@@ -129,7 +136,7 @@
 
   @media (min-width: $vp-1440) {
     width: max-content;
-    top: 463px;
+    top: 464px;
     left: 561px;
   }
 }
@@ -140,5 +147,6 @@
   @media (min-width: $vp-1440) {
     display: block;
     margin: 0;
+    padding: 18px 17px 15px;
   }
 }

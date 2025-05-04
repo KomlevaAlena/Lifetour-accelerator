@@ -117,7 +117,6 @@ export const sliderReviews = new Swiper('.reviews__wrapper', {
 export const sliderAdvantages = function sliderAdvantages() {
   const swiperDom = document.querySelector('.advantages__wrapper');
   const swiperStyle = document.querySelector('.page-body');
-  // const slidesCount = document.querySelectorAll('.advantages__list').length;
   if(document.body.clientWidth >= 1440) {
     swiperDom.classList.add('swiper');
     swiperDom.querySelector('.advantages__list').classList.add('swiper-wrapper');
@@ -135,11 +134,12 @@ export const sliderAdvantages = function sliderAdvantages() {
       breakpoints: {
         1440: {
           // slidesPerView: 3.58,
-          slidesPerView: 3.58,
+          slidesPerView: 'auto',
           centeredSlides: true,
-          initialSlide: 2,
+          initialSlide: 3,
           spaceBetween: 30,
           freeMode: false,
+          slideToClickedSlide: true,
         },
       },
     });
