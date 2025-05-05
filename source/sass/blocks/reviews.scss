@@ -5,7 +5,7 @@
   padding: 36px 0 20px;
 
   @media (min-width: $vp-768) {
-    padding: 39px 0 20px;
+    padding: 60px 0 20px;
   }
 
   @media (min-width: $vp-1440) {
@@ -36,7 +36,7 @@
 }
 
 .reviews__wrapper.swiper {
-  padding: 10px 0;
+  padding: 9px 0 10px 0;
 
   @media (min-width: $vp-1440) {
     width: 1320px;
@@ -74,7 +74,7 @@
     font-size: 25px;
     line-height: 25px;
     margin: 0;
-    letter-spacing: 0.45px;
+    letter-spacing: 0;
     padding: 0 0 26px;
   }
 
@@ -119,7 +119,7 @@
     line-height: 40px;
     left: 0;
     top: -15px;
-    letter-spacing: 0.65px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $vp-1440) {
