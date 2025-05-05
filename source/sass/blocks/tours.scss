@@ -36,8 +36,8 @@
     &::before {
       position: absolute;
       content: "";
-      right: 0px;
-      top: 0px;
+      right: -176px;
+      top: -92px;
       width: 602px;
       height: 1630px;
       background-image: url("../img/clouds-tablet-1x.webp");
@@ -157,7 +157,7 @@
     line-height: 26px;
     margin: 0;
     padding: 0 0 25px;
-    letter-spacing: 0;
+    letter-spacing: -0.02px;
   }
 
   @media (min-width: $vp-1440) {
@@ -186,7 +186,7 @@
     line-height: 40px;
     left: 0;
     top: -15px;
-    letter-spacing: 0.65px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $vp-1440) {

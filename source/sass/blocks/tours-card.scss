@@ -69,7 +69,7 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 0 0 32px;
+    padding: 0 0 31px;
     width: 271px;
     margin: 0 auto 0 21px;
 
@@ -136,8 +136,9 @@
   margin-right: 4px;
 
   @media (min-width: $vp-768) {
-    margin-left: auto;
+    margin: 0 0 0 0;
     width: max-content;
+    padding: 8px 16px 7px 15px;
   }
 
   @media (min-width: $vp-1440) {
@@ -162,7 +163,7 @@
 }
 
 .tours-card__item--moon {
-  margin-left: 7px;
+  margin: 0 0 0 auto;
 
   svg {
     width: 18px;
@@ -174,21 +175,36 @@
   margin-left: auto;
   justify-content: start;
 
-  .tours-card__item {
-    @media (min-width: $vp-768) {
-      margin-left: auto;
+
+
+  @media (min-width: $vp-768) {
+    padding: 8px 0 17px;
+    justify-content: start;
+    width: 290px;
+
+    .tours-card__item {
+      margin: 0 0 0 0;
       width: max-content;
+    }
+
+    .tours-card__item--moon{
+      margin: 0 0 0 15px;
+
+      svg {
+        margin: 0 14px 0 0;
+      }
+    }
+
+    .tours-card__item--sun{
+      margin: 0 0 0 auto;
+
+      svg {
+        margin: 0 14px 0 0;
+      }
     }
   }
 
-  @media (min-width: $vp-768) {
-    padding: 8px 0 18px;
-    justify-content: start;
-    width: 290px;
-  }
-
   @media (min-width: $vp-1440) {
-    // width: max-content;
     width: 340px;
     padding: 8px 0 17px;
 
@@ -285,6 +301,9 @@
 
 
 .tours-caucasus .tours-card__wrapper .tours-card__list {
+  @media (min-width: $vp-768){
+
+  }
   @media (min-width: $vp-1440) {
     .tours-card__item--pin {
       padding: 6px 14px 9px 14px;
@@ -305,6 +324,10 @@
 }
 
 .tours-kamchatka .tours-card__wrapper .tours-card__list {
+  // @media (min-width: $vp-768){
+
+  // }
+
   @media (min-width: $vp-1440) {
 
     .tours-card__item .tours-card__category {
@@ -333,6 +356,10 @@
 }
 
 .tours-kamchatka .tours-card__wrapper .tours-card__title {
+  // @media (min-width: $vp-768){
+
+  // }
+
   @media (min-width: $vp-1440){
     padding: 0 0 21px 0;
   }
