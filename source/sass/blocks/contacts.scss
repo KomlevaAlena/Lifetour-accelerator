@@ -28,7 +28,7 @@
 
   @media (min-width: $vp-768) {
     width: 678px;
-    padding: 40px 0 0;
+    padding: 39px 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,7 +71,7 @@
     width: 678px;
     font-size: 25px;
     line-height: 25px;
-    letter-spacing: 0.65px;
+    letter-spacing: 0;
     margin: 0 auto;
     padding: 61px 0 0;
   }
@@ -104,7 +104,7 @@
     line-height: 40px;
     left: 1px;
     top: 46px;
-    letter-spacing: 0.85px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -129,9 +129,9 @@
     width: 530px;
     font-size: 16px;
     line-height: 24px;
-    padding: 20px 0 0 45px;
+    padding: 21px 0 0 45px;
     margin: 0;
-    letter-spacing: -0.05px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $vp-1440) {
