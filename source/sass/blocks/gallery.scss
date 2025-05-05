@@ -5,7 +5,7 @@
   padding: 21px 0 0;
 
   @media (min-width: $vp-768) {
-    padding: 79px 0 0;
+    padding: 61px 0 0;
     width: 768px;
   }
 
@@ -93,6 +93,7 @@
     line-height: 25px;
     margin: 0;
     padding: 0 0 20px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -121,7 +122,7 @@
     line-height: 40px;
     left: 0;
     top: -15px;
-    letter-spacing: 0.65px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -145,6 +146,11 @@
   width: 78px;
   top: 85px;
   right: 0;
+
+  @media (min-width: $vp-768) {
+    top: 86px;
+  right: 0;
+  }
 }
 
 .gallery__description {
