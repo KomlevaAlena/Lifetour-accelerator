@@ -39,6 +39,8 @@
     width: 270px;
     font-size: 18px;
     line-height: 18px;
+    letter-spacing: -0.15px;
+    padding: 0 0 12px;
   }
 
   @media (min-width: $vp-1440) {
@@ -53,7 +55,7 @@
 
 .about__list .about-card:last-of-type {
   .about-card__title {
-    padding: 1px 0 17px;
+    padding: 1px 0 11px;
   }
 }
 

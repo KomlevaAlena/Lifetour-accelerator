@@ -19,7 +19,7 @@
 
     picture {
       width: 450px;
-      padding-top: 131px;
+      padding-top: 129px;
       margin: 0;
     }
   }
@@ -79,7 +79,8 @@
     line-height: 25px;
     width: 270px;
     margin: 0;
-    letter-spacing: 0.35px;
+    padding: 15px 0 0;
+    letter-spacing: 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -105,8 +106,8 @@
     font-size: 40px;
     line-height: 40px;
     left: -1px;
-    top: 2px;
-    letter-spacing: 0.65px;
+    top: 0;
+    letter-spacing: 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -128,7 +129,7 @@
 
   @media (min-width: $vp-768) {
     width: 270px;
-    padding: 47px 0 22px;
+    padding: 48px 0 22px;
   }
 
   @media (min-width: $vp-1440) {
