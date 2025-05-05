@@ -6,7 +6,7 @@
 
   @media (min-width: $vp-768) {
     width: 768px;
-    padding: 62px 0 20px;
+    padding: 60px 0 20px;
   }
 
   @media (min-width: $vp-1440) {
@@ -81,6 +81,7 @@
   @media (min-width: $vp-768) {
     font-size: 25px;
     line-height: 25px;
+    letter-spacing: 0;
     text-align: center;
     padding: 0 0 60px;
   }
@@ -110,7 +111,7 @@
     line-height: 40px;
     left: -8px;
     top: -15px;
-    letter-spacing: 0.65px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $vp-1440) {
